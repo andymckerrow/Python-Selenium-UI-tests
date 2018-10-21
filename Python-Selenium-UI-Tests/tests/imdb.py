@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 
 def test_imdb_search():
-    driver = Chrome("/Users/andymckerrow/Helio/QAPoint/_drivers/chromedriver")
+    driver = Chrome("/Users/andymckerrow/Helio/QAPoint/Python-Selenium-UI-Tests/_drivers/chromedriver")
     driver.get("https://www.imdb.com/")
     driver.find_element_by_id('navbar-query').send_keys('badlands')
     driver.find_element_by_css_selector('[class*="magnifyingglass"]').click()
